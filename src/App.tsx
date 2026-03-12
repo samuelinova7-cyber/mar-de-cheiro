@@ -854,67 +854,6 @@ const FAQ = () => {
   );
 };
 
-const JobOpportunity = () => {
-  const whatsappJobLink = "https://wa.me/5521951118800?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20vaga%20de%20panfletagem%20na%20Praia%20do%20Franc%C3%AAs.";
-
-  return (
-    <section id="vagas" className="py-24 bg-blue-600 text-white overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Text Content */}
-          <div className="z-20">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 text-white text-sm font-bold mb-6 uppercase tracking-wider">
-              <span className="w-2 h-2 rounded-full bg-yellow-400"></span>
-              Contratação Imediata
-            </div>
-            
-            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-              Trabalhe na <span className="text-yellow-400">Praia do Francês</span>
-            </h2>
-            
-            <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-              Estamos contratando para serviços temporários durante o período de praia. Faça um "extra" trabalhando em um dos lugares mais bonitos de Marechal Deodoro, AL!
-            </p>
-
-            <div className="bg-white/10 rounded-2xl p-6 mb-8 backdrop-blur-sm border border-white/20">
-              <h3 className="text-xl font-bold mb-4 text-yellow-400">Detalhes da Vaga</h3>
-              <ul className="space-y-3 text-blue-50">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-yellow-400 shrink-0 mt-1" size={20} />
-                  <span><strong>Função:</strong> Entrega de panfletos (panfletagem).</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-yellow-400 shrink-0 mt-1" size={20} />
-                  <span><strong>Condições:</strong> Trabalho diário com pagamento efetuado no mesmo dia.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-yellow-400 shrink-0 mt-1" size={20} />
-                  <span><strong>Requisitos:</strong> Experiência prévia com panfletagem e atendimento ao público.</span>
-                </li>
-              </ul>
-            </div>
-            
-            <Button variant="accent" className="text-lg px-8 py-4 rounded-xl shadow-lg w-full sm:w-auto" href={whatsappJobLink}>
-              <MessageCircle size={24} /> WhatsApp: (21) 95111-8800
-            </Button>
-          </div>
-
-          {/* Media Content */}
-          <div className="relative z-20">
-            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[9/16] md:aspect-square lg:aspect-[4/5] bg-blue-800 border-4 border-white/20">
-              <VideoPlayer
-                src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/meeeeee/grok-video-61a4e9bf-5ed6-41f1-bc03-84171fc63911.mp4"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent pointer-events-none"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white border-t border-slate-50">
@@ -1010,7 +949,6 @@ export default function App() {
       <Instagram />
       <Testimonials />
       <FAQ />
-      <JobOpportunity />
       <Contact />
       <Footer />
       <WhatsAppWidget />

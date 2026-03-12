@@ -134,6 +134,6 @@ export const INSTAGRAM_IMAGES = [
   'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/Captura%20de%20tela%202026-02-08%20102552.png',
 ];
 
-export const WHATSAPP_LINK = 'https://wa.me/5582999999999';
-export const GOOGLE_REVIEWS_LINK = 'https://g.page/r/review';
-export const INSTAGRAM_LINK = 'https://instagram.com/mardecheiro';
+export const WHATSAPP_LINK = 'https://wa.me/5521951118800';
+export const GOOGLE_REVIEWS_LINK = 'https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID';
+export const INSTAGRAM_LINK = 'https://www.instagram.com/mardecheiro_lavanderia/';
