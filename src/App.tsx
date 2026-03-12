@@ -912,8 +912,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h4 className="text-lg font-bold">Redes Sociais</h4>
           <div className="flex gap-4 justify-center md:justify-start">
-            <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-blue-500 transition-colors"><InstagramIcon size={20} /></a>
-            <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-blue-500 transition-colors"><Facebook size={20} /></a>
+            <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-blue-500 transition-colors"><InstagramIcon size={20} /></a>
           </div>
         </div>
       </div>
