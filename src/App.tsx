@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion } from 'motion/react';
 import { 
   Menu, 
   X, 
@@ -26,6 +27,91 @@ import {
   VolumeX,
   Wifi
 } from 'lucide-react';
+
+const AutoScrollContainer = ({ children, speed = 1 }: { children: React.ReactNode, speed?: number }) => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isInteracting, setIsInteracting] = useState(false);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    let animationFrameId: number;
+    let lastTime = 0;
+
+    const scroll = (time: number) => {
+      if (!lastTime) lastTime = time;
+      const deltaTime = time - lastTime;
+      lastTime = time;
+
+      if (!isInteracting) {
+        el.scrollLeft += speed * (deltaTime / 16);
+        if (el.scrollLeft >= el.scrollWidth / 2) {
+          el.scrollLeft = 0;
+        }
+      }
+      animationFrameId = requestAnimationFrame(scroll);
+    };
+
+    animationFrameId = requestAnimationFrame(scroll);
+
+    // Mouse drag to scroll
+    let isDown = false;
+    let startX: number;
+    let scrollLeft: number;
+
+    const onMouseDown = (e: MouseEvent) => {
+      isDown = true;
+      setIsInteracting(true);
+      startX = e.pageX - el.offsetLeft;
+      scrollLeft = el.scrollLeft;
+    };
+
+    const onMouseLeave = () => {
+      isDown = false;
+      setIsInteracting(false);
+    };
+
+    const onMouseUp = () => {
+      isDown = false;
+      setIsInteracting(false);
+    };
+
+    const onMouseMove = (e: MouseEvent) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - el.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      el.scrollLeft = scrollLeft - walk;
+    };
+
+    el.addEventListener('mousedown', onMouseDown);
+    el.addEventListener('mouseleave', onMouseLeave);
+    el.addEventListener('mouseup', onMouseUp);
+    el.addEventListener('mousemove', onMouseMove);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      el.removeEventListener('mousedown', onMouseDown);
+      el.removeEventListener('mouseleave', onMouseLeave);
+      el.removeEventListener('mouseup', onMouseUp);
+      el.removeEventListener('mousemove', onMouseMove);
+    };
+  }, [isInteracting, speed]);
+
+  return (
+    <div 
+      ref={scrollRef}
+      className="flex overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing select-none"
+      onMouseEnter={() => setIsInteracting(true)}
+      onMouseLeave={() => setIsInteracting(false)}
+      onTouchStart={() => setIsInteracting(true)}
+      onTouchEnd={() => setIsInteracting(false)}
+    >
+      {children}
+    </div>
+  );
+};
 import { 
   NAV_ITEMS, 
   DIFFERENTIALS, 
@@ -353,13 +439,13 @@ const Structure = () => {
         <h2 className="text-4xl md:text-5xl font-heading text-slate-800">Nossa Estrutura</h2>
       </div>
       <div className="relative mb-20">
-        <div className="animate-infinite-scroll flex gap-8">
+        <AutoScrollContainer>
           {[...STRUCTURE_IMAGES, ...STRUCTURE_IMAGES].map((img, idx) => (
-            <div key={idx} className="w-[320px] md:w-[420px] lg:w-[500px] shrink-0 aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-slate-100">
-              <img src={img} alt={`Estrutura ${idx}`} className="w-full h-full object-cover" />
+            <div key={idx} className="w-[320px] md:w-[420px] lg:w-[500px] shrink-0 aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-slate-100 mr-8">
+              <img src={img} alt={`Estrutura ${idx}`} className="w-full h-full object-cover pointer-events-none" />
             </div>
           ))}
-        </div>
+        </AutoScrollContainer>
       </div>
 
       <div className="container mx-auto px-4 max-w-4xl">
@@ -613,16 +699,16 @@ const Influencers = () => {
         <h2 className="text-4xl md:text-6xl font-heading text-slate-800 tracking-tight">Vídeos da Lavanderia</h2>
       </div>
       <div className="relative">
-        <div className="animate-infinite-scroll flex gap-8">
+        <AutoScrollContainer speed={1.5}>
           {[...videoUrls, ...videoUrls].map((url, idx) => (
-            <div key={idx} className="relative w-[280px] md:w-[320px] shrink-0 aspect-[9/16] rounded-[32px] overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
+            <div key={idx} className="relative w-[280px] md:w-[320px] shrink-0 aspect-[9/16] rounded-[32px] overflow-hidden shadow-2xl border-8 border-white bg-slate-100 mr-8">
               <VideoPlayer
                 src={url}
                 className="w-full h-full object-cover"
               />
             </div>
           ))}
-        </div>
+        </AutoScrollContainer>
       </div>
     </section>
   );
@@ -690,26 +776,26 @@ const Instagram = () => {
       </div>
 
       <div className="relative">
-        <div className="animate-infinite-scroll flex gap-4">
+        <AutoScrollContainer speed={2}>
           {[...INSTAGRAM_IMAGES, ...INSTAGRAM_IMAGES].map((url, idx) => (
             <a 
               key={idx} 
               href={INSTAGRAM_LINK} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative w-[280px] shrink-0 aspect-[9/16] rounded-2xl overflow-hidden shadow-lg group"
+              className="relative w-[280px] shrink-0 aspect-[9/16] rounded-2xl overflow-hidden shadow-lg group mr-4"
             >
               <img 
                 src={url} 
                 alt={`Instagram Post ${idx + 1}`} 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 pointer-events-none"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <InstagramIcon size={32} className="text-white" />
               </div>
             </a>
           ))}
-        </div>
+        </AutoScrollContainer>
       </div>
     </section>
   );
