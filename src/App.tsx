@@ -415,22 +415,24 @@ const Plans = () => {
     {
       title: "Lavagem Avulsa",
       description: "Ciclo de 60 minutos para cesto de até 10kg. Limpeza profunda with produtos OMO.",
-      price: "17",
-      cents: "50",
+      price: "18",
+      cents: "90",
       unit: "cesto",
       icon: <Droplets size={44} className="text-[#2d3a82]" />,
       buttonText: "Agendar Lavagem",
-      variant: "success" as const
+      variant: "success" as const,
+      promo: "Terça-feira: R$ 15,90"
     },
     {
       title: "Secagem Avulsa",
       description: "Ciclo de 45 minutos. Suas roupas secas e prontas para usar.",
-      price: "17",
-      cents: "50",
+      price: "18",
+      cents: "90",
       unit: "ciclo",
       icon: <Wind size={44} className="text-[#2d3a82]" />,
       buttonText: "Agendar Secagem",
-      variant: "success" as const
+      variant: "success" as const,
+      promo: "Terça-feira: R$ 15,90"
     },
     {
       title: "Plano Ouro - 10 ciclos",
@@ -469,6 +471,11 @@ const Plans = () => {
               {plan.popular && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#70b9f1] text-white px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 border-2 border-white shadow-md">
                   <Star size={14} className="fill-white" /> Mais popular
+                </div>
+              )}
+              {plan.promo && (
+                <div className="absolute top-4 right-4 bg-yellow-400 text-[#2d3a82] px-3 py-1 rounded-lg text-xs font-bold shadow-sm animate-pulse">
+                  {plan.promo}
                 </div>
               )}
               
@@ -578,7 +585,9 @@ const Influencers = () => {
   const videoUrls = [
     "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQMd9Zh_O3uiVFtRTqOKwbYTSVmpHaba3xzCAXsbrrBhpZ0-MqxHYP_Di01IOHj-NZCxeiBOeMwxY4CmW8rZSISg5rKhAyIa3EabLnY.mp4",
     "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQNcysBa_0PZr2dH_Oji2p9xilznh8UcyMHCqEFxNPMnGrYBPJHg6tgQGVeooMFLnW2h8Jg1enn-m_08m5JW8gJLoRxj8ZGhDQ99VwI.mp4",
-    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQMw0evuZYb8K26sTIjhVd9YCQtieS3s5u1tnOcI9fJN0g7t2noR-_zpyVj3ZfkXbBcB6pOjEEzYFio2gdxV-4xT.mp4"
+    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQMw0evuZYb8K26sTIjhVd9YCQtieS3s5u1tnOcI9fJN0g7t2noR-_zpyVj3ZfkXbBcB6pOjEEzYFio2gdxV-4xT.mp4",
+    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQPsgNWgoW9Li88_6u1qAKddAvCZiiwHIOOUoo6Q5QK-LhP-tGi92uraeolfVp0OBKEInXFbPUsjshjyUct2NYLX.mp4",
+    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQNP3AH3cjJaUGtu9KrV8VK1NV0OEQzjE7dqNXFEevk4qAKZnvDG0W5Xs0lSPOj2vbu0kSux6fnOoWjuRrAjxV75.mp4"
   ];
 
   return (
@@ -603,15 +612,17 @@ const Influencers = () => {
         <h3 className="text-blue-500 font-brand text-2xl mb-2">Conheça Mais</h3>
         <h2 className="text-4xl md:text-6xl font-heading text-slate-800 tracking-tight">Vídeos da Lavanderia</h2>
       </div>
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
-        {videoUrls.map((url, idx) => (
-          <div key={idx} className="relative aspect-[9/16] rounded-[32px] overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
-            <VideoPlayer
-              src={url}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+      <div className="relative">
+        <div className="animate-infinite-scroll flex gap-8">
+          {[...videoUrls, ...videoUrls].map((url, idx) => (
+            <div key={idx} className="relative w-[280px] md:w-[320px] shrink-0 aspect-[9/16] rounded-[32px] overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
+              <VideoPlayer
+                src={url}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
