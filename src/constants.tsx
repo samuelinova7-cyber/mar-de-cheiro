@@ -113,25 +113,24 @@ export const FAQ_ITEMS = [
 ];
 
 export const STRUCTURE_IMAGES = [
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/01.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/02.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/03.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/04.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/05.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/06.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/07.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/08.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/09.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/10.jpeg',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/11.jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM%20(2).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM%20(1).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM.jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(4).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(3).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(2).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(1).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.33%20PM.jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.33%20PM%20(3).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.33%20PM%20(1).jpeg',
 ];
 
 export const INSTAGRAM_IMAGES = [
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/Captura%20de%20tela%202026-02-08%20102323%20(1).png',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/Captura%20de%20tela%202026-02-08%20102428.png',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/Captura%20de%20tela%202026-02-08%20102503.png',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/Captura%20de%20tela%202026-02-08%20102531.png',
-  'https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/Captura%20de%20tela%202026-02-08%20102552.png',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM%20(3).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM%20(2).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM%20(1).jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM.jpeg',
+  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM%20(3).jpeg',
 ];
 
 export const WHATSAPP_LINK = 'https://wa.me/5521951118800';

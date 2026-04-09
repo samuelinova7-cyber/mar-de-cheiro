@@ -149,7 +149,7 @@ const Header = () => {
       <div className={`container mx-auto px-4 flex items-center justify-between transition-all duration-300 ${scrolled ? 'py-3' : 'py-5'}`}>
         <a href="#home" className="flex items-center gap-3">
           <video 
-            src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/meeeeee/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4" 
+            src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4" 
             autoPlay 
             muted 
             loop 
@@ -240,7 +240,7 @@ const Hero = () => {
           <div className="relative z-20">
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-square md:aspect-[4/3] lg:aspect-square bg-slate-100">
               <VideoPlayer
-                src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/meeeeee/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4"
+                src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4"
                 className="absolute inset-0 w-full h-full object-cover"
                 overlayClassName="bottom-32 right-6"
               />
@@ -276,11 +276,11 @@ const PremiumService = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Image Side */}
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-blue-100 rounded-[40px] transform -rotate-3 transition-transform group-hover:rotate-0 duration-500"></div>
-            <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5]">
+          <div className="relative group animate-levitate">
+            <div className="absolute -inset-4 bg-blue-100 rounded-[40px] transform -rotate-3 transition-transform group-hover:rotate-0 duration-500 animate-flash-glow"></div>
+            <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] reflection-effect">
               <img 
-                src="https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/WhatsApp%20Image%202026-02-07%20at%2011.11.45%20PM%20(1).jpeg" 
+                src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/Captura%20de%20tela%202026-04-09%20001013.png" 
                 alt="Serviço de organização premium Mar de Cheiro" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -352,13 +352,22 @@ const Structure = () => {
         <h3 className="text-blue-500 font-brand text-2xl mb-2">Conforto & Qualidade</h3>
         <h2 className="text-4xl md:text-5xl font-heading text-slate-800">Nossa Estrutura</h2>
       </div>
-      <div className="relative">
+      <div className="relative mb-20">
         <div className="animate-infinite-scroll flex gap-8">
           {[...STRUCTURE_IMAGES, ...STRUCTURE_IMAGES].map((img, idx) => (
             <div key={idx} className="w-[320px] md:w-[420px] lg:w-[500px] shrink-0 aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-slate-100">
               <img src={img} alt={`Estrutura ${idx}`} className="w-full h-full object-cover" />
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="relative aspect-video rounded-[32px] overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
+          <VideoPlayer
+            src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQOWmFlbfp7qMWRdssRlVHD39pOrk6ILVwNA-UnAPo-IROkhVUAjNki3UwTNPqTStuFT5z3WeKeasoVX6qxtUklz59JANb_xFSLffGI.mp4"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
@@ -500,11 +509,12 @@ const ScheduleCollection = () => {
   return (
     <section className="relative py-28 overflow-hidden flex items-center justify-center">
       <div className="absolute inset-0 z-0">
-        <VideoPlayer
-          src="https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/grok%20mar%20de%20cheiro.mp4"
+        <img
+          src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM.jpeg"
           className="w-full h-full object-cover"
+          alt="Background"
         />
-        <div className="absolute inset-0 bg-[#e9eff5]/70 backdrop-blur-[2px] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-blue-600/40 backdrop-blur-[2px] animate-flash-glow pointer-events-none"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10 flex justify-center">
@@ -566,8 +576,9 @@ const AboutUs = () => {
 
 const Influencers = () => {
   const videoUrls = [
-    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/meeeeee/SnapInsta.to_AQPsgNWgoW9Li88_6u1qAKddAvCZiiwHIOOUoo6Q5QK-LhP-tGi92uraeolfVp0OBKEInXFbPUsjshjyUct2NYLX.mp4",
-    "https://bvubljssahqtzzeboeew.supabase.co/storage/v1/object/public/our/SnapInsta.to_AQMWc9FAAto_UlpgGam2OJ7m9E7qfnP9NsEZn2SEfLGgCVBSEs5Ps0dZRYkht1KNyCdQDr1hwCSJSq10vlWN1Gb0qPbww48LrQpZyBY.mp4"
+    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQMd9Zh_O3uiVFtRTqOKwbYTSVmpHaba3xzCAXsbrrBhpZ0-MqxHYP_Di01IOHj-NZCxeiBOeMwxY4CmW8rZSISg5rKhAyIa3EabLnY.mp4",
+    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQNcysBa_0PZr2dH_Oji2p9xilznh8UcyMHCqEFxNPMnGrYBPJHg6tgQGVeooMFLnW2h8Jg1enn-m_08m5JW8gJLoRxj8ZGhDQ99VwI.mp4",
+    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQMw0evuZYb8K26sTIjhVd9YCQtieS3s5u1tnOcI9fJN0g7t2noR-_zpyVj3ZfkXbBcB6pOjEEzYFio2gdxV-4xT.mp4"
   ];
 
   return (
@@ -589,10 +600,10 @@ const Influencers = () => {
       </div>
 
       <div className="container mx-auto px-4 text-center mb-16">
-        <h3 className="text-blue-500 font-brand text-2xl mb-2">Quem Recomenda</h3>
-        <h2 className="text-4xl md:text-6xl font-heading text-slate-800 tracking-tight">Influenciadores</h2>
+        <h3 className="text-blue-500 font-brand text-2xl mb-2">Conheça Mais</h3>
+        <h2 className="text-4xl md:text-6xl font-heading text-slate-800 tracking-tight">Vídeos da Lavanderia</h2>
       </div>
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
         {videoUrls.map((url, idx) => (
           <div key={idx} className="relative aspect-[9/16] rounded-[32px] overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
             <VideoPlayer
@@ -652,7 +663,7 @@ const FabricCare = () => {
 
 const Instagram = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-6xl font-brand text-[#2d3a82] mb-4">Siga nosso Instagram</h2>
         <p className="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -665,15 +676,17 @@ const Instagram = () => {
         >
           <InstagramIcon size={20} className="mr-2" /> Nos siga no Instagram
         </Button>
+      </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-7xl mx-auto">
-          {INSTAGRAM_IMAGES.map((url, idx) => (
+      <div className="relative">
+        <div className="animate-infinite-scroll flex gap-4">
+          {[...INSTAGRAM_IMAGES, ...INSTAGRAM_IMAGES].map((url, idx) => (
             <a 
               key={idx} 
               href={INSTAGRAM_LINK} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-lg group"
+              className="relative w-[280px] shrink-0 aspect-[9/16] rounded-2xl overflow-hidden shadow-lg group"
             >
               <img 
                 src={url} 
@@ -890,7 +903,7 @@ const Footer = () => {
         <div className="max-w-xs">
           <div className="flex items-center gap-3 mb-6">
             <video 
-              src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/meeeeee/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4" 
+              src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4" 
               autoPlay 
               muted 
               loop 
