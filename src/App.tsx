@@ -670,7 +670,6 @@ const AboutUs = () => {
 const Influencers = () => {
   const videoUrls = [
     "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949451/SnapInsta.to_AQNP3AH3cjJaUGtu9KrV8VK1NV0OEQzjE7dqNXFEevk4qAKZnvDG0W5Xs0lSPOj2vbu0kSux6fnOoWjuRrAjxV75_a4nyls.mp4",
-    "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949450/SnapInsta.to_AQNkoNFyb2pdz1vM20OKtR0Rppqy9ErMC0BkWQNqO1sJHTcxttE5tCBxWS9sX9GSt5FoUSgxFfUPLuw1GyieAIxCTcJh2sFFvVQR8RA_co5du6.mp4",
     "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949449/SnapInsta.to_AQMw0evuZYb8K26sTIjhVd9YCQtieS3s5u1tnOcI9fJN0g7t2noR-_zpyVj3ZfkXbBcB6pOjEEzYFio2gdxV-4xT_imfsn5.mp4",
     "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949482/SnapInsta.to_AQPsgNWgoW9Li88_6u1qAKddAvCZiiwHIOOUoo6Q5QK-LhP-tGi92uraeolfVp0OBKEInXFbPUsjshjyUct2NYLX_xknijs.mp4",
     "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949473/SnapInsta.to_AQOylbhWFc6pmiUnnznfHzlpc5JYyrCk2Tk2rR1w7qNHphU4zuTT2CYtYnsnm7oR_ktyetpOgA8A1unHnHvi4ecyMU8tprIdWevz5BE_kihemd.mp4",
