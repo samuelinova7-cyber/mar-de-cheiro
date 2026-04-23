@@ -113,26 +113,27 @@ export const FAQ_ITEMS = [
 ];
 
 export const STRUCTURE_IMAGES = [
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM%20(2).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM%20(1).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM.jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(4).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(3).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(2).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.34%20PM%20(1).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.33%20PM.jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.33%20PM%20(3).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.33%20PM%20(1).jpeg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949463/10_kafmxq.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949462/09_liajws.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949462/08_pm5kig.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949461/07_hkcg08.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949460/06_ujqszp.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949460/05_n5hwvm.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949459/04_fwiyu8.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949459/03_a6kyhr.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949458/02_rrdx8k.jpg',
 ];
 
 export const INSTAGRAM_IMAGES = [
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM%20(3).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM%20(2).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM%20(1).jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM.jpeg',
-  'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.35%20PM%20(3).jpeg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949444/11_cqnbxj.jpg',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949445/Captura_de_tela_2026-02-08_102323_qk6kho.png',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949446/Captura_de_tela_2026-02-08_102428_rnqfgd.png',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949446/Captura_de_tela_2026-02-08_102503_uzw0gj.png',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949447/Captura_de_tela_2026-02-08_102531_bvcqir.png',
+  'https://res.cloudinary.com/dqukldtq1/image/upload/v1776949447/Captura_de_tela_2026-02-08_102552_q7mrnh.png',
+  'https://res.cloudinary.com/dqukldtq1/video/upload/v1776949988/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9_fj2q0p.mp4',
 ];
 
 export const WHATSAPP_LINK = 'https://wa.me/5521951118800';
-export const GOOGLE_REVIEWS_LINK = 'https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID';
-export const INSTAGRAM_LINK = 'https://www.instagram.com/mardecheiro_lavanderia/';
+export const GOOGLE_REVIEWS_LINK = 'https://g.page/r/CZm98FRTjnpKEBM/review';
+export const INSTAGRAM_LINK = 'https://www.instagram.com/lavanderiamardecheiroofc?igsh=MTAzN3hrdzQyaXVncg==';

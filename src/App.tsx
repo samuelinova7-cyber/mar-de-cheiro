@@ -235,7 +235,7 @@ const Header = () => {
       <div className={`container mx-auto px-4 flex items-center justify-between transition-all duration-300 ${scrolled ? 'py-3' : 'py-5'}`}>
         <a href="#home" className="flex items-center gap-3">
           <video 
-            src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4" 
+            src="https://res.cloudinary.com/dqukldtq1/video/upload/v1776949988/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9_fj2q0p.mp4" 
             autoPlay 
             muted 
             loop 
@@ -326,7 +326,7 @@ const Hero = () => {
           <div className="relative z-20">
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-square md:aspect-[4/3] lg:aspect-square bg-slate-100">
               <VideoPlayer
-                src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4"
+                src="https://res.cloudinary.com/dqukldtq1/video/upload/v1776949988/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9_fj2q0p.mp4"
                 className="absolute inset-0 w-full h-full object-cover"
                 overlayClassName="bottom-32 right-6"
               />
@@ -366,7 +366,7 @@ const PremiumService = () => {
             <div className="absolute -inset-4 bg-blue-100 rounded-[40px] transform -rotate-3 transition-transform group-hover:rotate-0 duration-500 animate-flash-glow"></div>
             <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] reflection-effect">
               <img 
-                src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/Captura%20de%20tela%202026-04-09%20001013.png" 
+                src="https://res.cloudinary.com/dqukldtq1/image/upload/v1776949447/Captura_de_tela_2026-04-09_001013_lkurpr.png" 
                 alt="Serviço de organização premium Mar de Cheiro" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -451,7 +451,7 @@ const Structure = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="relative aspect-video rounded-[32px] overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
           <VideoPlayer
-            src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQOWmFlbfp7qMWRdssRlVHD39pOrk6ILVwNA-UnAPo-IROkhVUAjNki3UwTNPqTStuFT5z3WeKeasoVX6qxtUklz59JANb_xFSLffGI.mp4"
+            src="https://res.cloudinary.com/dqukldtq1/video/upload/v1776949459/SnapInsta.to_AQOWmFlbfp7qMWRdssRlVHD39pOrk6ILVwNA-UnAPo-IROkhVUAjNki3UwTNPqTStuFT5z3WeKeasoVX6qxtUklz59JANb_xFSLffGI_oarpo9.mp4"
             className="w-full h-full object-cover"
           />
         </div>
@@ -603,7 +603,7 @@ const ScheduleCollection = () => {
     <section className="relative py-28 overflow-hidden flex items-center justify-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-04-08%20at%2011.34.36%20PM.jpeg"
+          src="https://res.cloudinary.com/dqukldtq1/image/upload/v1776949446/Captura_de_tela_2026-02-08_102428_rnqfgd.png"
           className="w-full h-full object-cover"
           alt="Background"
         />
@@ -669,11 +669,12 @@ const AboutUs = () => {
 
 const Influencers = () => {
   const videoUrls = [
-    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQMd9Zh_O3uiVFtRTqOKwbYTSVmpHaba3xzCAXsbrrBhpZ0-MqxHYP_Di01IOHj-NZCxeiBOeMwxY4CmW8rZSISg5rKhAyIa3EabLnY.mp4",
-    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQNcysBa_0PZr2dH_Oji2p9xilznh8UcyMHCqEFxNPMnGrYBPJHg6tgQGVeooMFLnW2h8Jg1enn-m_08m5JW8gJLoRxj8ZGhDQ99VwI.mp4",
-    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQMw0evuZYb8K26sTIjhVd9YCQtieS3s5u1tnOcI9fJN0g7t2noR-_zpyVj3ZfkXbBcB6pOjEEzYFio2gdxV-4xT.mp4",
-    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQPsgNWgoW9Li88_6u1qAKddAvCZiiwHIOOUoo6Q5QK-LhP-tGi92uraeolfVp0OBKEInXFbPUsjshjyUct2NYLX.mp4",
-    "https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQNP3AH3cjJaUGtu9KrV8VK1NV0OEQzjE7dqNXFEevk4qAKZnvDG0W5Xs0lSPOj2vbu0kSux6fnOoWjuRrAjxV75.mp4"
+    "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949451/SnapInsta.to_AQNP3AH3cjJaUGtu9KrV8VK1NV0OEQzjE7dqNXFEevk4qAKZnvDG0W5Xs0lSPOj2vbu0kSux6fnOoWjuRrAjxV75_a4nyls.mp4",
+    "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949450/SnapInsta.to_AQNkoNFyb2pdz1vM20OKtR0Rppqy9ErMC0BkWQNqO1sJHTcxttE5tCBxWS9sX9GSt5FoUSgxFfUPLuw1GyieAIxCTcJh2sFFvVQR8RA_co5du6.mp4",
+    "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949449/SnapInsta.to_AQMw0evuZYb8K26sTIjhVd9YCQtieS3s5u1tnOcI9fJN0g7t2noR-_zpyVj3ZfkXbBcB6pOjEEzYFio2gdxV-4xT_imfsn5.mp4",
+    "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949482/SnapInsta.to_AQPsgNWgoW9Li88_6u1qAKddAvCZiiwHIOOUoo6Q5QK-LhP-tGi92uraeolfVp0OBKEInXFbPUsjshjyUct2NYLX_xknijs.mp4",
+    "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949473/SnapInsta.to_AQOylbhWFc6pmiUnnznfHzlpc5JYyrCk2Tk2rR1w7qNHphU4zuTT2CYtYnsnm7oR_ktyetpOgA8A1unHnHvi4ecyMU8tprIdWevz5BE_kihemd.mp4",
+    "https://res.cloudinary.com/dqukldtq1/video/upload/v1776949448/SnapInsta.to_AQMd9Zh_O3uiVFtRTqOKwbYTSVmpHaba3xzCAXsbrrBhpZ0-MqxHYP_Di01IOHj-NZCxeiBOeMwxY4CmW8rZSISg5rKhAyIa3EabLnY_phrytv.mp4"
   ];
 
   return (
@@ -777,24 +778,38 @@ const Instagram = () => {
 
       <div className="relative">
         <AutoScrollContainer speed={2}>
-          {[...INSTAGRAM_IMAGES, ...INSTAGRAM_IMAGES].map((url, idx) => (
-            <a 
-              key={idx} 
-              href={INSTAGRAM_LINK} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="relative w-[280px] shrink-0 aspect-[9/16] rounded-2xl overflow-hidden shadow-lg group mr-4"
-            >
-              <img 
-                src={url} 
-                alt={`Instagram Post ${idx + 1}`} 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 pointer-events-none"
-              />
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <InstagramIcon size={32} className="text-white" />
-              </div>
-            </a>
-          ))}
+          {[...INSTAGRAM_IMAGES, ...INSTAGRAM_IMAGES].map((url, idx) => {
+            const isVideo = url.includes('/video/upload/');
+            return (
+              <a 
+                key={idx} 
+                href={INSTAGRAM_LINK} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="relative w-[280px] shrink-0 aspect-[9/16] rounded-2xl overflow-hidden shadow-lg group mr-4"
+              >
+                {isVideo ? (
+                  <video 
+                    src={url}
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 pointer-events-none"
+                  />
+                ) : (
+                  <img 
+                    src={url} 
+                    alt={`Instagram Post ${idx + 1}`} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 pointer-events-none"
+                  />
+                )}
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <InstagramIcon size={32} className="text-white" />
+                </div>
+              </a>
+            );
+          })}
         </AutoScrollContainer>
       </div>
     </section>
@@ -1000,7 +1015,7 @@ const Footer = () => {
         <div className="max-w-xs">
           <div className="flex items-center gap-3 mb-6">
             <video 
-              src="https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9.mp4" 
+              src="https://res.cloudinary.com/dqukldtq1/video/upload/v1776949988/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9_fj2q0p.mp4" 
               autoPlay 
               muted 
               loop 
@@ -1041,6 +1056,42 @@ const WhatsAppWidget = () => {
   );
 };
 
+const GoogleReviewsSection = () => {
+  return (
+    <section className="py-24 bg-[#f8fafc]">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          {/* Video Side */}
+          <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-8 border-white aspect-video bg-slate-100">
+            <VideoPlayer
+              src="https://res.cloudinary.com/dqukldtq1/video/upload/v1776949988/grok-video-6519da2c-cc0c-4315-89f6-1093d69f7cb9_1_thguba.mp4"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Text Side */}
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100/50 text-blue-600 text-sm font-bold w-fit uppercase tracking-wider">
+              Sua opinião importa
+            </div>
+            <h2 className="text-4xl md:text-6xl font-brand text-[#2d3a82]">Avalie Mar de Cheiro no Google</h2>
+            <p className="text-slate-600 text-lg md:text-xl leading-relaxed">
+              Sua avaliação é fundamental para continuarmos oferecendo o melhor serviço da Praia do Francês. Compartilhe sua experiência e ajude outros clientes a nos encontrar!
+            </p>
+            <Button 
+              variant="navy" 
+              className="rounded-xl px-12 py-5 text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 w-fit" 
+              href={GOOGLE_REVIEWS_LINK}
+            >
+              <Star size={20} className="fill-yellow-400 text-yellow-400" /> Avaliar Mar de Cheiro no Google
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function App() {
   return (
     <div className="antialiased overflow-x-hidden">
@@ -1048,6 +1099,7 @@ export default function App() {
       <Hero />
       <Structure />
       <PremiumService />
+      <GoogleReviewsSection />
       <WhatsAppNotice />
       <Plans />
       <ScheduleCollection />
